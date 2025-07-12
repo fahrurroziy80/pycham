@@ -1,4 +1,4 @@
-from sys import hash_info
+
 
 
 def kalkulator ():

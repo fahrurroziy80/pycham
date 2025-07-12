@@ -24,7 +24,7 @@ def program():
         ip = socket.gethostbyname(hostname)
         print(f"IP address dari {hostname} adalah :{ip}")
     elif pilihan == '3':
-        def kalkulator():
+
             a = float(input("masukan angka pertama :"))
             b = float(input("masukan angka kedua : "))
 
@@ -44,7 +44,7 @@ def program():
 
             print("adalah", hasil)
 
-        kalkulator()
+
     else:
         print("program berakhir ")
         return
