@@ -14,5 +14,24 @@ print(result)
 result = 10 << 2  # Binary: 1010 << 2 = 101000 (Decimal: 40)
 print(result)
 #Shift Kanan ( >> ): Menggeser bit suatu angka ke kanan dengan jumlah posisi tertentu. Untuk bilangan positif, ia mengisi posisi kosong dengan angka nol. Untuk bilangan negatif, biasanya diisi dengan angka satu (ekstensi tanda) untuk mempertahankan tanda. Ini setara dengan pembagian bilangan bulat dengan 2 dipangkatkan dengan jumlah pergeseran.
-result = 10 >> 1  # Binary: 1010 >> 1 = 0101 (Decimal: 5)
+result = 10 >> 1  # Binary: 1010 >> 1 = 0101 (Decimal: 5)//
 print(result)
+
+
+
+# operator assigmet
+a = 5#aassigment
+a += a
+print(a)
+
+a = 5
+a -= a
+print(a)
+
+a = 5
+a //= a
+print(a)
+
+a = 5
+a *= a
+print(a)
