@@ -1,3 +1,6 @@
+from abc import abstractmethod
+
+
 def my_decorator(func):
     def wrapper():
         print("Menjalankan fungsi : ", say_hello)
@@ -52,3 +55,49 @@ class Lingkaran:
 # Gunakan
 ling = Lingkaran(7)
 print("hasilnya adalah = ",ling.luas)  # Output: 153.86 (tanpa tanda kurung)
+
+
+
+print("========================================================================================")
+print("OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO")
+print("=========================================================================================")
+class Button():
+    from abc import ABC, abstractmethod
+
+    class Button(ABC):
+        def __init__(self, set_link):  # Salah ketik: __int__ => __init__
+            self._link = set_link
+
+        @abstractmethod
+        def clink(self):
+            pass
+
+        @property
+        @abstractmethod
+        def link(self):
+            pass
+
+        @link.setter
+        @abstractmethod
+        def link(self, value):
+            pass
+
+    class PushButton(Button):
+        def __init__(self, set_link):
+            super().__init__(set_link)  # Panggil constructor parent
+            self._link = set_link
+
+        def clink(self):
+            print("Clink : {}".format(self.link))
+
+        @property
+        def link(self):
+            return self._link
+
+        @link.setter
+        def link(self, value):
+            self._link = value
+
+    # Testing
+    tombol1 = PushButton("www.terr.com")
+    tombol1.clink()  # Output: GO TO : www.terr.com
