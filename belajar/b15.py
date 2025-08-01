@@ -1,23 +1,33 @@
+#membuat list (Iterators)
+
+list = [1,2,3,4,5,6]
+it = list.__iter__()
+el = it.__next__()
+while el:
+    print(el,end="")
+    try:
+        el = it.__next__()
+    except StopIteration as e:
+        print("")
+        break
 
 
 
-def kalkulator():
-    a = float(input("masukan angka 1 :"))
-    b = float(input("masukan angka 2 :"))
 
-    operator = input("pilih operasi : [*], [/], [+], [-] : ")
 
-    if operator == "*":
-        hasil = a * b
-    elif operator == "/":
-        hasil = a / b
-    elif operator == "+":
-        hasil = a + b
-    elif operator == "-":
-        hasil = a - b
-    else:
-        print("operasi tidak valid")
-        return
-    print("hasilnya adalah : ", hasil)
 
-kalkulator()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
