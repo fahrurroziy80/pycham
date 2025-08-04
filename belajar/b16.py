@@ -54,6 +54,7 @@ print(teks_baru)
 
 print("===============================================================")
 
+
 teks = "No NIK  saya 0812345678901212"
 pattern = r"08\d{8,16}"
 
@@ -61,4 +62,17 @@ nomor_hp = re.search(pattern, teks)
 if nomor_hp:
     print(f"No NIK : {nomor_hp.group()}")
 
+print("==================================================================")
+print("==================================================================")
+teks ="""
+Kunjungi website kami di https://www.fahrurrozi.com atau 
+http://fahrurrozi.org. jangan lupa follow https://instagram.com/fahrurrozi"""
+
+pattern = r"https?://[^\s]+"
+
+
+urls = re.findall(pattern,  teks)
+
+for url in urls:
+    print(f"URL ditemukan : {url}")
 print("==================================================================")
