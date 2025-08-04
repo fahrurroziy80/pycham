@@ -14,7 +14,7 @@ print(tanggal)
 print(f"Ini hari :{tanggal:%A}")
 
 print("================================")
-import datetime as dt
+
 
 print("silakan masukan tanggal, bulan, tahun")
 
@@ -22,6 +22,6 @@ tanggal = input("masukan tanggal lahir anda :")
 bulan = input("masukan bulan lahir anda : ")
 tahun = input("masukan tahun lahir anda : ")
 
-print("tanggal ",tanggal)
+print(f"tanggal ,{tanggal:%A}")
 print("bulan",bulan)
 print("tahun",tahun)
