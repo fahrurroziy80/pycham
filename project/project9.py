@@ -46,6 +46,6 @@ def program():
 
 
     else:
-        print("program berakhir ")
+        print(" tidak valid")
         return
 program()
